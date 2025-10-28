@@ -1,0 +1,129 @@
+/* ================================
+   COMMISSIONS / MY EARNINGS PAGE
+   ================================ */
+
+.earnings-container {
+  background: #ffffff;
+  padding: 20px; /* reduced padding for compactness */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  max-width: 900px;
+  margin: 20px auto;
+  font-family: 'Poppins', sans-serif;
+}
+
+.earnings-container h2 {
+  font-size: 1.6rem; /* slightly smaller for compact display */
+  color: #e50914; /* brand primary red for headings */
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.earnings-container p {
+  font-size: 14px; /* smaller font */
+  color: #333;
+  margin: 4px 0;
+}
+
+.earnings-container h3 {
+  margin-top: 10px;
+  font-size: 1.3rem;
+  color: #222;
+}
+
+.earnings-container h3 span {
+  color: #16a34a; /* green accent for earnings */
+  font-weight: 600;
+}
+
+.earnings-container h4 {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  color: #2b2b2b;
+  border-bottom: 2px solid #e50914;
+  display: inline-block;
+  padding-bottom: 4px;
+  
+}
+
+.table-wrapper {
+  margin-top: 15px;
+  overflow-x: auto;
+  border-radius: 12px;
+}
+
+.earnings-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 8px;
+  background-color: #fafafa;
+  
+}
+
+.earnings-table th,
+.earnings-table td {
+  border: 1px solid #ddd;
+  padding: 8px 6px; /* reduced padding */
+  text-align: left;
+  
+  font-size: 13px; /* smaller font for compact table */
+}
+
+.earnings-table th {
+  background-color: #fce4e4; /* light red accent */
+  color: #b71c1c;
+  font-weight: 600;
+  
+}
+
+.earnings-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+  
+}
+
+.earnings-table tr:hover {
+  background-color: #fff0f0;
+  transition: 0.2s ease;
+}
+
+.error-message {
+  color: #d32f2f;
+  background: #fdecea;
+  padding: 8px 12px; /* reduced padding */
+  border-radius: 6px;
+  margin: 15px 0;
+  font-size: 13px;
+}
+
+.loading-message {
+  color: #e50914;
+  font-weight: 500;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .earnings-container {
+    padding: 15px;
+    margin: 10px;
+  }
+
+  .earnings-container h2 {
+    font-size: 1.4rem;
+  }
+
+  .earnings-table th,
+  .earnings-table td {
+    font-size: 12px;
+    padding: 6px 4px;
+  }
+}
+
+/* Optional: compact summary boxes */
+.earnings-summary p {
+  margin: 4px 0;
+  font-size: 13px;
+}

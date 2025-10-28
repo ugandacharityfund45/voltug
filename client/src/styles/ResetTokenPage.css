@@ -1,0 +1,114 @@
+:root {
+  --primary-color: #e60000; /* Red */
+  --secondary-color: #808080; /* Gray */
+  --accent-color: #87ceeb; /* Sky Blue */
+}
+
+.reset-token-container {
+  background: #f7f7f7;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.reset-token-title {
+  color: var(--primary-color);
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 0.3rem;
+}
+
+.reset-token-subtitle {
+  color: var(--secondary-color);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.reset-token-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.reset-token-table th,
+.reset-token-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.reset-token-table th {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.token-string {
+  font-family: monospace;
+  font-size: 0.9rem;
+  color: var(--accent-color);
+  word-break: break-all;
+}
+
+.token-active {
+  color: green;
+  font-weight: bold;
+}
+
+.token-expired {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.delete-btn {
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.delete-btn:hover {
+  background: var(--accent-color);
+}
+
+.reset-token-empty {
+  text-align: center;
+  color: var(--secondary-color);
+  margin-top: 2rem;
+}
+
+.reset-token-loading {
+  text-align: center;
+  color: var(--secondary-color);
+  font-size: 1.2rem;
+}
+
+.copy-btn {
+  background: #007bff;
+  border: none;
+  color: white;
+  padding: 4px 8px;
+  margin-left: 6px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: 0.2s ease-in-out;
+}
+
+.copy-btn:hover {
+  background: #0056b3;
+}
+
+.copy-btn:active {
+  transform: scale(0.95);
+}
+
+.token-string {
+  display: flex;
+  align-items: center;
+}
+

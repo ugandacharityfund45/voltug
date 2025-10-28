@@ -1,0 +1,139 @@
+.admin-dashboard-container {
+  background: #f9fafb;
+  min-height: 100vh;
+  padding: 2rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.admin-header {
+  background: linear-gradient(135deg, #00a36c, #87ceeb);
+  color: white;
+  padding: 1.5rem 2rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.admin-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.admin-subtitle {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.admin-loading {
+  text-align: center;
+  color: #008000;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.admin-error {
+  text-align: center;
+  color: red;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.admin-table-container {
+  overflow-x: auto;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  padding: 1rem;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-table th {
+  background-color: #008000;
+  color: white;
+  padding: 12px 10px;
+  font-weight: 600;
+  text-align: left;
+  font-size: 0.95rem;
+}
+
+.admin-table td {
+  border-bottom: 1px solid #e0e0e0;
+  padding: 10px;
+  color: #333;
+}
+
+.admin-table tr:hover {
+  background-color: #f1fdf7;
+}
+
+.referral {
+  font-weight: 600;
+  color: #0078d7;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.status-admin {
+  background-color: #00a36c;
+  color: white;
+}
+
+.status-user {
+  background-color: #ff6b6b;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .admin-header {
+    padding: 1rem;
+  }
+
+  .admin-table th,
+  .admin-table td {
+    font-size: 0.85rem;
+  }
+}
+
+/* Reset Tasks Button */
+.btn {
+  padding: 10px 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.btn-danger:hover {
+  background-color: #b52a37;
+}
+
+.btn-disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Header button alignment */
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

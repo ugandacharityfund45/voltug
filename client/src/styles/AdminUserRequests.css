@@ -1,0 +1,215 @@
+/* ====== General Container ====== */
+.admin-requests-container {
+  padding: 20px;
+  background: #f9fafb;
+  min-height: 100vh;
+  font-family: "Inter", sans-serif;
+  color: #333;
+}
+
+/* ====== Header ====== */
+.admin-requests-container header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.admin-requests-container h2 {
+  font-size: 1.5rem;
+  color: #222;
+  margin: 0 0 10px 0;
+}
+
+.admin-requests-container input[type="text"] {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 300px;
+  transition: all 0.2s ease;
+}
+
+.admin-requests-container input[type="text"]:focus {
+  border-color: #27ae60;
+  outline: none;
+  box-shadow: 0 0 4px rgba(39, 174, 96, 0.4);
+}
+
+/* ====== Loading State ====== */
+.loading {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 40px;
+}
+
+/* ====== Table Styling ====== */
+.requests-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.requests-table thead {
+  background-color: #27ae60;
+  color: white;
+}
+
+.requests-table th,
+.requests-table td {
+  padding: 12px 10px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+.requests-table tbody tr:hover {
+  background-color: #f2fef5;
+}
+
+.requests-table th {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+}
+
+/* ====== Status Tags ====== */
+.status {
+  padding: 4px 8px;
+  border-radius: 5px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.status.pending {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.status.approved {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.status.rejected {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+/* ====== Action Buttons ====== */
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+}
+
+.approve-btn,
+.reject-btn,
+.reply-btn,
+.send-reply,
+.cancel-reply {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  color: white;
+  transition: all 0.2s ease;
+}
+
+.approve-btn {
+  background: #27ae60;
+}
+.approve-btn:hover {
+  background: #239b56;
+}
+
+.reject-btn {
+  background: #c0392b;
+}
+.reject-btn:hover {
+  background: #a93226;
+}
+
+.reply-btn {
+  background: #2980b9;
+}
+.reply-btn:hover {
+  background: #2471a3;
+}
+
+.send-reply {
+  background: #27ae60;
+}
+.send-reply:hover {
+  background: #219150;
+}
+
+.cancel-reply {
+  background: #bdbdbd;
+  color: #333;
+}
+.cancel-reply:hover {
+  background: #9e9e9e;
+}
+
+/* ====== Reply Box ====== */
+.reply-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.reply-box textarea {
+  width: 100%;
+  min-height: 60px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 0.9rem;
+  resize: vertical;
+  font-family: "Inter", sans-serif;
+}
+
+.reply-box textarea:focus {
+  border-color: #27ae60;
+  outline: none;
+}
+
+/* ====== Responsive Design ====== */
+@media (max-width: 900px) {
+  .requests-table th,
+  .requests-table td {
+    padding: 8px 6px;
+    font-size: 0.85rem;
+  }
+
+  .admin-requests-container input[type="text"] {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .requests-table {
+    font-size: 0.8rem;
+  }
+
+  .reply-box textarea {
+    min-height: 50px;
+  }
+
+  .approve-btn,
+  .reject-btn,
+  .reply-btn,
+  .send-reply,
+  .cancel-reply {
+    padding: 5px 8px;
+    font-size: 0.8rem;
+  }
+}

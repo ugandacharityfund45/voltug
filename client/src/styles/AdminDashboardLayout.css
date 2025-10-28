@@ -1,0 +1,188 @@
+
+/* Brand Colors */
+:root {
+  --brand-green: #009245;
+  --brand-red: #d32f2f;
+  --brand-sky: #224D61FF;
+  --sidebar-bg: #2D5563FF;
+  --sidebar-hover: #3B7DC7FF;
+  --text-light: #ffffff;
+  --text-dim: #cccccc;
+}
+
+/* Layout */
+.admin-layout {
+  display: flex;
+  height: 100vh;
+  background-color: #f9fafb;
+}
+
+/* Sidebar */
+.sidebar {
+  background: var(--sidebar-bg);
+  color: var(--text-light);
+  transition: width 0.3s ease;
+  overflow: hidden;
+}
+
+.sidebar.open {
+  width: 230px;
+}
+
+.sidebar.closed {
+  width: 70px;
+}
+
+/* Sidebar Header */
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background: var(--brand-sky);
+  color: #fff;
+}
+
+.sidebar-header h2 {
+  font-size: 1.2rem;
+}
+
+.toggle-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Sidebar Links */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  color: var(--text-light);
+  text-decoration: none;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.sidebar-link:hover {
+  background: var(--sidebar-hover);
+}
+
+.sidebar .icon {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.sidebar .label {
+  flex-grow: 1;
+}
+
+.sidebar li.active > .sidebar-link {
+  background: var(--brand-sky);
+  color: #fff;
+  font-weight: bold;
+}
+
+.tooltip {
+  position: absolute;
+  left: 80px;
+  background: var(--brand-sky);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  opacity: 0;
+  transform: translateY(-50%);
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.sidebar.closed li:hover .tooltip {
+  opacity: 1;
+}
+
+/* Submenu */
+.submenu {
+  list-style: none;
+  margin: 0;
+  padding-left: 1rem;
+}
+
+.submenu.open {
+  display: block;
+}
+
+.submenu.closed {
+  display: none;
+}
+
+.submenu li {
+  margin: 4px 0;
+}
+
+/* Deposit and Withdrawal colors */
+.deposit-item .sidebar-link {
+  border-left: 4px solid var(--brand-green);
+}
+
+.withdraw-item .sidebar-link {
+  border-left: 4px solid var(--brand-red);
+}
+
+/* Hover accent */
+.deposit-item .sidebar-link:hover {
+  background: rgba(0, 146, 69, 0.2);
+}
+
+.withdraw-item .sidebar-link:hover {
+  background: rgba(211, 47, 47, 0.2);
+}
+
+/* Main Content */
+.main-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Topbar */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--brand-sky);
+  color: white;
+  padding: 10px 20px;
+}
+
+.logout-btn {
+  background: #0F364AFF;
+  border: none;
+  padding: 8px 16px;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.logout-btn:hover {
+  background: #1E5A74FF;
+}
+
+/* Page Content */
+.page-content {
+  padding: 20px;
+  background: #f5f7fa;
+  flex-grow: 1;
+  overflow-y: auto;
+  border-top: 2px solid var(--brand-sky);
+}

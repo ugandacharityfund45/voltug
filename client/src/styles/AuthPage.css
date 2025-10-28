@@ -1,0 +1,148 @@
+/* client/src/styles/AuthPage.css */
+:root {
+  --primary-color: #e50914; /* red */
+  --secondary-color: #555;  /* gray */
+  --accent-color: #38bdf8;  /* sky blue */
+  --white: #fff;
+}
+
+/* ============ Container & Card ============ */
+.auth-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+}
+
+.auth-card {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  width: 90%;
+  max-width: 420px;
+  text-align: center;
+}
+
+/* ============ Titles ============ */
+.auth-title {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.auth-subtitle {
+  color: var(--secondary-color);
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+/* ============ Input Styles ============ */
+.auth-form input {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.3s;
+}
+
+.auth-form input:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 4px var(--accent-color);
+}
+
+/* ============ Password Input Alignment ============ */
+.password-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.password-container input {
+  flex: 1;
+  padding-right: 45px; /* extra space for button */
+  margin: 8px 0;
+}
+
+.toggle-password {
+  position: absolute;
+  left: auto;
+  padding: 0px;
+  padding-right: 1px;
+  padding-left: 1px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  background: ;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+
+  transition: color 0.2s;
+}
+.svg-container {
+  position: absolute;
+  left: 470px;
+  top: 52%;
+  transform: translateY(-50%);
+}
+
+.toggle-password:hover {
+  color: var(--primary-color);
+}
+
+/* ============ Buttons ============ */
+button {
+  width: 100%;
+  padding: 12px;
+  background: var(--primary-color);
+  color: var(--white);
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 12px;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #b0060f;
+}
+
+/* ============ Footer & Links ============ */
+.auth-footer {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: var(--secondary-color);
+}
+
+.auth-link {
+  color: var(--accent-color);
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 4px;
+}
+
+.auth-link:hover {
+  text-decoration: underline;
+}
+
+/* ============ Message ============ */
+.auth-message {
+  margin-top: 1rem;
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.auth-link {
+  color: #1e90ff;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.auth-link:hover {
+  color: #0b63c6;
+}

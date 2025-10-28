@@ -1,0 +1,256 @@
+.team-container {
+  padding: 20px;
+  background: #f8f9fa;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+.team-title {
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+  color: #2e7d32;
+  margin-bottom: 10px;
+}
+
+.team-icon {
+  margin-right: 8px;
+  color: #4caf50;
+}
+
+.team-total {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.no-team {
+  text-align: center;
+  color: #888;
+  margin-top: 40px;
+}
+
+.team-level-card {
+  background: #fff;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+.team-level-header {
+  cursor: pointer;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  color: #333;
+  background: #e8f5e9;
+  border-radius: 12px 12px 0 0;
+  user-select: none;
+}
+
+.team-level-header:hover {
+  background: #d0f0d4;
+}
+
+.level-title {
+  display: flex;
+  align-items: center;
+}
+
+.arrow {
+  margin-right: 10px;
+  color: #388e3c;
+  transition: transform 0.2s ease;
+}
+
+.team-members {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+}
+
+.team-members.expanded {
+  max-height: 500px;
+  transition: max-height 0.5s ease-in;
+}
+
+.team-member {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #eee;
+  padding: 12px 20px;
+  background: #fff;
+}
+
+.team-member p {
+  margin: 0;
+  color: #333;
+}
+
+.team-member span {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.joined-date {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .team-member {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .joined-date {
+    margin-top: 5px;
+  }
+}
+
+/* Referral Code Display */
+.referral-section {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+  border-left: 5px solid #4caf50;
+}
+
+.referral-label {
+  font-weight: 600;
+  color: #2e7d32;
+  margin-bottom: 8px;
+}
+
+.referral-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.referral-code {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #388e3c;
+}
+
+.copy-btn {
+  background: #4caf50;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.copy-btn:hover {
+  background: #388e3c;
+}
+
+/* Referral Code + Link Section */
+.referral-section {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+  border-left: 5px solid #4caf50;
+}
+
+.referral-label {
+  font-weight: 600;
+  color: #2e7d32;
+  margin-bottom: 6px;
+}
+
+.referral-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f1f8e9;
+  border-radius: 8px;
+  padding: 10px 14px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.referral-code {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #388e3c;
+  margin-right: 10px;
+}
+
+.referral-link {
+  font-size: 0.95rem;
+  color: #2e7d32;
+  word-break: break-all;
+  flex: 1;
+}
+
+.link-box {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.link-actions {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.copy-btn,
+.share-btn {
+  background: #4caf50;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: background 0.2s ease;
+}
+
+.copy-btn:hover,
+.share-btn:hover {
+  background: #388e3c;
+}
+
+.share-btn.fb {
+  background: #1877f2;
+}
+
+.share-btn.fb:hover {
+  background: #125ac1;
+}
+
+@media (max-width: 768px) {
+  .referral-box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .link-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .copy-btn,
+  .share-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+.member-balance {
+  color: #1e7e34;
+  font-weight: 600;
+  font-size: 0.9rem;
+}

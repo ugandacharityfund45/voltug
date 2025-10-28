@@ -1,0 +1,97 @@
+.transactions-container {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  max-width: 900px;
+  margin: 20px auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  font-family: 'Poppins', sans-serif;
+}
+
+.transactions-container h2 {
+  color: #2b9348;
+  margin-bottom: 10px;
+}
+
+.transaction-form {
+  display: flex;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.transaction-input {
+  flex: 1;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.btn-withdraw {
+  background-color: #16a34a;
+  color: #fff;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.btn-withdraw:hover {
+  background-color: #138037;
+}
+
+.transactions-table-wrapper {
+  overflow-x: auto;
+}
+
+.transactions-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.transactions-table th,
+.transactions-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+  font-size: 14px;
+}
+
+/* Header */
+.transactions-table th {
+  background-color: #e6f4ea;
+  color: #256d33;
+  font-weight: 600;
+}
+
+/* Status row colors */
+.transactions-table tr.pending td {
+  background-color: #fef3c7; /* light amber */
+  color: #b45309;
+  font-weight: 500;
+}
+
+.transactions-table tr.rejected td {
+  background-color: #fee2e2; /* light red */
+  color: #b91c1c;
+  font-weight: 500;
+}
+
+.transactions-table tr.approved td {
+  background-color: #d1fae5; /* light green */
+  color: #065f46;
+  font-weight: 500;
+}
+
+/* Zebra striping for other rows */
+.transactions-table tr:nth-child(even):not(.pending):not(.rejected):not(.approved) {
+  background-color: #f9f9f9;
+}
+
+.transactions-table tr:hover td {
+  background-color: #eef9f1;
+  transition: 0.2s ease;
+}

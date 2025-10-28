@@ -1,0 +1,178 @@
+:root {
+  --primary-color: #e50914; /* red */
+  --secondary-color: #555;  /* gray */
+  --accent-color: #38bdf8;  /* sky blue */
+  --white: #fff;
+}
+
+/* Wallet / Transactions Container */
+.transactions-container {
+  max-width: 950px;
+  margin: 30px auto;
+  background: var(--white);
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  padding: 25px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Header */
+.transactions-container h2 {
+  color: var(--primary-color);
+  text-align: center;
+  font-size: 28px;
+}
+
+/* Balance display */
+.transactions-container p strong {
+  font-weight: 600;
+
+}
+
+.transactions-container span {
+  font-weight: 600;
+}
+
+/* Transactions Table Wrapper */
+.transactions-table-wrapper {
+  overflow-x: auto;
+  margin-top: 15px;
+}
+
+/* Transactions Table */
+.transactions-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.transactions-table th,
+.transactions-table td {
+  border: 1px solid #eee;
+  padding: 10px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.transactions-table th {
+  background-color: var(--accent-color);
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Transaction Type Colors */
+.transactions-table td:first-child.deposit {
+  color: #2563eb; /* Blue */
+  font-weight: 600;
+}
+
+.transactions-table td:first-child.withdrawal {
+  color: #16a34a; /* Green */
+  font-weight: 600;
+}
+
+/* Transaction Status Colors */
+.transactions-table tr.pending td:nth-child(3) {
+  color: #b45309;
+  background: #fef3c7;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.transactions-table tr.approved td:nth-child(3) {
+  color: #065f46;
+  background: #d1fae5;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.transactions-table tr.rejected td:nth-child(3) {
+  color: #b91c1c;
+  background: #fee2e2;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+/* Input & Buttons (if needed) */
+.transaction-form {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.transaction-input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.btn-withdraw {
+  background: var(--primary-color);
+  color: var(--white);
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-withdraw:hover {
+  background: #b0060f;
+}
+
+/* Terms Section */
+.wallet-terms {
+  margin-top: 25px;
+  background: #f9fafb;
+  padding: 20px;
+  border-left: 5px solid var(--primary-color);
+  border-radius: 12px;
+}
+
+.wallet-terms h3 {
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.wallet-terms ul {
+  list-style: disc;
+  margin-left: 20px;
+  color: var(--secondary-color);
+  line-height: 1.6;
+}
+
+/* Loading and Session States */
+.loading-screen,
+.session-expired {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.session-expired button {
+  background: var(--primary-color);
+  color: var(--white);
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.session-expired button:hover {
+  background: #b0060f;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .transactions-container {
+    padding: 15px;
+  }
+
+  .transactions-table th,
+  .transactions-table td {
+    font-size: 12px;
+    padding: 8px;
+  }
+}

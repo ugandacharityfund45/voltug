@@ -1,0 +1,124 @@
+/* ============================
+   Login Page Styling
+   Colors: Green, Red, Sky Blue
+   ============================ */
+
+.login-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0ea5e9 0%, #22c55e 100%); /* sky blue → green */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+  padding: 1rem;
+}
+
+.login-card {
+  background-color: #ffffff;
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  padding: 2.5rem 2rem;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.login-card:hover {
+  transform: translateY(-5px);
+}
+
+.login-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #15803d; /* green-700 */
+  margin-bottom: 0.25rem;
+}
+
+.login-subtitle {
+  font-size: 0.95rem;
+  color: #64748b;
+  margin-bottom: 1.5rem;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.login-form input {
+  padding: 0.75rem;
+  border-radius: 0.75rem;
+  border: 1px solid #d1d5db;
+  outline: none;
+  font-size: 1rem;
+  transition: all 0.3s;
+}
+
+.login-form input:focus {
+  border-color: #0ea5e9; /* sky blue */
+  box-shadow: 0 0 6px rgba(14, 165, 233, 0.3);
+}
+
+.login-form button {
+  background-color: #22c55e; /* green */
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.login-form button:hover {
+  background-color: #15803d; /* darker green */
+  transform: translateY(-1px);
+}
+
+.login-message {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+}
+
+.login-message.error {
+  color: #dc2626; /* red-600 */
+  font-weight: 500;
+}
+
+.signup-link {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: #475569;
+}
+
+.signup-link span {
+  color: #0ea5e9; /* sky blue */
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.signup-link span:hover {
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .login-card {
+    padding: 2rem 1.5rem;
+  }
+}
+.view-password-toggle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  boarder-radius: 100px;
+  border: 1.5px solid #ccc;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

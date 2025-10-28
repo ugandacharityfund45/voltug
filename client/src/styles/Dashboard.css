@@ -1,0 +1,135 @@
+:root {
+  --primary-color: #e60000; /* Volt Red */
+  --secondary-color: #808080; /* Gray */
+  --accent-color: #87ceeb; /* Sky Blue */
+  --background-color: #f8f9fb;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  background-color: var(--background-color);
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* General Card Styling */
+.dashboard-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.dashboard-card h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0.6rem;
+  color: var(--primary-color);
+}
+
+.dashboard-card p {
+  color: var(--secondary-color);
+  margin: 0.3rem 0;
+}
+
+.dashboard-card.clickable:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Wallet Summary */
+.wallet-summary {
+  border-top: 4px solid var(--accent-color);
+}
+
+.balance-text {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.card-link {
+  color: var(--accent-color);
+  margin-top: 0.4rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+/* Tasks */
+.tasks-summary {
+  border-top: 4px solid var(--primary-color);
+}
+
+/* Earnings */
+.earnings-summary {
+  border-top: 4px solid var(--accent-color);
+}
+
+/* Team */
+.team-summary {
+  border-top: 4px solid var(--primary-color);
+}
+
+/* Customer Service */
+.service-summary {
+  border-top: 4px solid var(--accent-color);
+}
+
+/* Recent Activity Section */
+.recent-activity {
+  grid-column: span 2;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+}
+
+.recent-activity h3 {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--accent-color);
+  padding-bottom: 0.5rem;
+}
+
+.recent-activity ul {
+  list-style: none;
+  padding: 0;
+}
+
+.recent-activity li {
+  background: #f4f9ff;
+  margin-bottom: 0.6rem;
+  padding: 0.6rem 0.9rem;
+  border-radius: 8px;
+  border-left: 4px solid var(--accent-color);
+  font-size: 0.95rem;
+  color: var(--secondary-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .recent-activity {
+    grid-column: span 1;
+  }
+}
+
+
+
+
+
+
+
+
+
+
